@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    <title>Conversor de moeda</title>
+</head>
+
+<body>
+    <div class="boxlogo">
+        <img src="img/money-unscreen.gif" alt="gif de duas mãos e uma cedula" class="logo">
+    </div>
+    <header>
+        <div class="boxgeral">
+            <div class="boxoptions">
+                <p class="textoptions">Converter <span>de</span></p>
+                <select name="firstoption" id="firstoption">
+                    <option value="BRL">R$ - Real Brasileiro</option>
+                    <option value="USD">US$ - Dólar Americano</option>
+                    <option value="EUR">€ - Euro</option>
+                </select>
+            </div>
+            <div class="boxoptions">
+                <p class="textoptions">Converter <span>para</span></p>
+                <select name="secondoption" id="secondoption">
+                    <option value="BRL">R$ - Real Brasileiro</option>
+                    <option value="USD">US$ - Dólar Americano</option>
+                    <option value="EUR">€ - Euro</option>
+                </select>
+            </div>
+            <div class="boxoptions">
+                <p class="textvalor">Valor</p>
+                <input type="text" placeholder="Digite o valor" id="inputvalor">
+            </div>
+            <div class="boxbutton">
+                <button class="buttonconvert" onclick="convertValues()">Converter</button>
+            </div>
+            <div class="boxresultado">
+                <div class="conteudoresultado">
+                    <img src="img/3d-illustration-golden-money-coins-png.webp" alt="" class="imgmoeda1">
+                    <p class="textmoedade">Moeda</p>
+                    <p id="textvalorde">$ 0</p>
+                </div>
+                <img src="img/setaanimada.gif" alt="vetor" class="imgvetor">
+                <div class="conteudoresultado">
+                    <img src="img/3d-illustration-golden-money-coins-png.webp" alt="" class="imgmoeda2">
+                    <p class="textmoedapara">Moeda</p>
+                    <p id="textvalorpara">$ 0</p>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
