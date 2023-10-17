@@ -8,6 +8,7 @@
 body {
     display: grid;
     justify-items: center;
+    padding: auto;
     background-image: url('img/Design\ sem\ nome\ \(5\).png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -149,4 +150,13 @@ input {
 
 .buttonconvert:active {
     opacity: 100%;
+}
+
+@media screen and (max-width: 500px) {
+    .boxgeral {
+        max-width: 350px;
+    } 
+    select, #inputvalor, .buttonconvert, .boxresultado  {
+        width: 305px;
+    }
 }
